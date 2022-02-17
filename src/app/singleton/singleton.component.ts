@@ -11,6 +11,7 @@ export class SingletonComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(User.getInstance())
     const s1 = User.getInstance();
     const s2 = User.getInstance();
     s1.age = 10;

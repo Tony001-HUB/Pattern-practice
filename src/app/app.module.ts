@@ -5,17 +5,20 @@ import { Route, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SingletonComponent } from './singleton/singleton.component';
 import { FactoryMethodComponent } from './factory-method/factory-method.component';
+import { BuilderComponent } from './builder/builder.component';
 
 const routes: Route[] = [
   { path: 'Singleton', component: SingletonComponent },
-  { path: 'FactoryMethod', component: FactoryMethodComponent}
+  { path: 'FactoryMethod', component: FactoryMethodComponent},
+  { path: 'Builder', component: BuilderComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     SingletonComponent,
-    FactoryMethodComponent
+    FactoryMethodComponent,
+    BuilderComponent
   ],
   imports: [
     BrowserModule,
